@@ -1,0 +1,31 @@
+{
+  "lang": "en",
+  "checkYo": false,
+  "findRepeatWords": true,
+  "ignoreUrls": true,
+  "excludeFiles": [
+    ".git",
+    "node_modules",
+    ".next"
+  ],
+  "format": "html",
+  "ignoreDigits": true,
+  "fileExtensions": [
+    ".ts",
+    ".tsx"
+  ],
+  "dictionary": [
+    "polyfill",
+    "ie11",
+    "ReactDOM",
+    "mavlikwowa",
+    "ui",
+    "getElementById",
+    "dom",
+    "FC",
+    "StyledButton",
+    "HTMLAttributes",
+    "ReactChild",
+    "snozzberries"
+  ]
+}
