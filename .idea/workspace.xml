@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71df339a-074b-43a3-b21a-d2f8d573146c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yaspellerrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Button/interfaces.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/example/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/example/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Button/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Button/style.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button/style.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stories/Button.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/stories/Button.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +37,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/stories" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.eslintrc.js" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
-    <property name="ts.external.directory.path" value="E:\GIT\mavlikwowa.ui\node_modules\typescript\lib" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
+    <property name="ts.external.directory.path" value="C:\_GIT\mavlikwowa.ui\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -63,6 +67,8 @@
       <option name="presentableId" value="Default" />
       <updated>1608894140410</updated>
       <workItem from="1608894144089" duration="4581000" />
+      <workItem from="1609162220406" duration="182000" />
+      <workItem from="1609221331663" duration="7558000" />
     </task>
     <servers />
   </component>
@@ -82,10 +88,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="87" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609153787807" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609153859249">
+    <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1609162315744">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609153859249" />
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609162315744" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1609162416301">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609162416301" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1609161563311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609161563311" />
+    <state x="666" y="253" width="587" height="534" key="find.popup" timestamp="1609224504491">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="666" y="253" width="587" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609224504491" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1609156183310">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

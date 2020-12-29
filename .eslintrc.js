@@ -30,6 +30,11 @@ module.exports = {
     "import/prefer-default-export": "off",
     "import/no-unresolved": "off",
     "no-param-reassign": ["error", { "props": false }],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "react/jsx-filename-extension": [
       "error",
       {
