@@ -5,8 +5,8 @@ import styled from '@emotion/styled';
 import { ButtonProps, ButtonSize } from './interfaces';
 
 /* Styled component */
-export const StyledButton = styled.button`
-  ${({ width, background, buttonSize }: ButtonProps) => {
+export const StyledButton = styled.button<ButtonProps>`
+  ${({ width, background, buttonSize, borderColor }: ButtonProps) => {
     // checks parametrs and creates sizes of button
     const createButtonSize = () => {
       const size = {
@@ -37,12 +37,21 @@ export const StyledButton = styled.button`
     };
     return `
       display: flex;
-      align-items: baseline;
+      align-items: center;
       justify-content: center;
       width: ${createButtonSize().width};
       height: ${createButtonSize().height};
       max-width: 250px;
-      background: ${background || 'auto'};
+      background: ${background || 'none'};
+      border-radius: 9px;
+      border: 3px solid ${borderColor || 'black'};
+      cursor: pointer;
+      outline: none;
+      transition: all 0.1s;
+      
+      &:active {
+        transform: scale(0.9);
+      }
     `;
   }}
 `;

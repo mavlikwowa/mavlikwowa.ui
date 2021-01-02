@@ -6,22 +6,20 @@ import { StyledButton } from './style';
 import { ButtonProps } from './interfaces';
 
 /* Button component */
-const Button: React.FC<ButtonProps> = ({
-  onClick,
-  width,
-  isLoading,
-  background,
-  buttonSize,
-  children,
-}: ButtonProps) => {
+const Button: React.FC<ButtonProps> = (
+  {
+    isLoading,
+    children,
+    // should redefine this types, because React.HTMLProps<HTMLButtonElement> has incompatible similar types
+    type = 'button',
+    as = undefined,
+    ...props
+  }: ButtonProps,
+  ...others
+) => {
   return (
-    <StyledButton
-      onClick={onClick}
-      width={width}
-      background={background}
-      buttonSize={buttonSize}
-    >
-      {isLoading ? 'Loading' : children}
+    <StyledButton {...props} {...others}>
+      {isLoading ? 'Loading...' : children}
     </StyledButton>
   );
 };
