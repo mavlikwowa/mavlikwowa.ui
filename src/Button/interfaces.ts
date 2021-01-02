@@ -20,6 +20,4 @@ export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
   buttonSize?: ButtonSize;
   /* Color */
   borderColor?: string;
-  /* A showing element */
-  // children: React.ReactNode;
 }
