@@ -1,6 +1,9 @@
+/* Libraries */
 import React, { useState } from 'react';
 import { Meta } from '@storybook/react';
+/* Components */
 import Button from '../src/Button';
+/* Interfaces */
 import { ButtonSize } from '../src/Button/interfaces';
 
 const meta: Meta = {

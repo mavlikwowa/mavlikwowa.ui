@@ -1,19 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test component Button should find a text of button 1`] = `
-<StyledButton
+exports[`Test component Button should render a component 1`] = `
+<Styled(button)
   0={Object {}}
   buttonSize="SMALL"
 >
   Button text
-</StyledButton>
-`;
-
-exports[`Test component Button should render Button component 1`] = `
-<StyledButton
-  0={Object {}}
-  buttonSize="SMALL"
->
-  Test button
-</StyledButton>
+</Styled(button)>
 `;
