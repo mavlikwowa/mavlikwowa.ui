@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = (
   {
     isLoading,
     children,
-    // should redefine this types, because React.HTMLProps<HTMLButtonElement> has incompatible similar types
+    // should redefine this types because React.HTMLProps<HTMLButtonElement> has incompatible similar types
     type = 'button',
     as = undefined,
     ...props
