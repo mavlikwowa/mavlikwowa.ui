@@ -26,14 +26,14 @@ export const Example: React.FC = () => {
   };
   return (
     <>
-      <div style={style}>A simple switcher without props and states</div>
-      <Switcher />
       <div style={style}>{`Current language is: ${
         clicked ? 'English' : 'Russian'
       }`}</div>
       <Switcher checked={clicked} onChange={clickOnSwitch}>
         {clicked ? <EnglishFlagIcon /> : <RussianFlagIcon />}
       </Switcher>
+      <div style={style}>A simple switcher without props and states</div>
+      <Switcher />
     </>
   );
 };

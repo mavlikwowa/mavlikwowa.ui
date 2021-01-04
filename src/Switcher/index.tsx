@@ -13,13 +13,8 @@ const Switcher: React.FC<SwitcherProps> = ({
   onChange,
 }: SwitcherProps) => {
   return (
-    <StyledSwitcher hasChildren={!!children} htmlFor="switcher">
-      <input
-        id="switcher"
-        type="checkbox"
-        checked={checked}
-        onChange={onChange}
-      />
+    <StyledSwitcher hasChildren={!!children}>
+      <input type="checkbox" checked={checked} onChange={onChange} />
       <span>{children || ''}</span>
     </StyledSwitcher>
   );

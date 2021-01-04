@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component Switcher should render a component 1`] = `
+<Styled(label)
+  hasChildren={false}
+>
+  <input
+    type="checkbox"
+  />
+  <span />
+</Styled(label)>
+`;

@@ -21,9 +21,13 @@ export const StyledSwitcher = styled.label<StyledSwitcherProps>`
         
         &:checked ~ span {
          background: ${hasChildren ? 'none' : 'white'};
-         transform: translateX(70%);
-         transition: transform 1s, background 1s;
+         transform: translateX(70%) rotate(180deg);
+         transition: transform 1s, background 1s, rotate 1s;
          border: ${hasChildren ? 'none' : '1px solid darkgrey'};
+        }
+        
+        &:active ~ span {
+          transform: scale(0.8);
         }
       }
       
