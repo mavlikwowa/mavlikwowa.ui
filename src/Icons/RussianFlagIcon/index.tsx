@@ -2,15 +2,16 @@ import React from 'react';
 
 const RussianFlagIcon: React.FC = () => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 9 6"
-      width="30"
-      height="30"
-    >
-      <rect fill="#fff" width="9" height="3" />
-      <rect fill="#d52b1e" y="3" width="9" height="3" />
-      <rect fill="#0039a6" y="2" width="9" height="2" />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <circle cx="256" cy="256" r="256" fill="#eee" />
+      <path
+        fill="#0052b4"
+        d="M496 345a255.4 255.4 0 0 0 0-178H16a255.5 255.5 0 0 0 0 178l240 22.3L496 345z"
+      />
+      <path
+        fill="#d80027"
+        d="M256 512a256 256 0 0 0 240-167H16a256 256 0 0 0 240 167z"
+      />
     </svg>
   );
 };

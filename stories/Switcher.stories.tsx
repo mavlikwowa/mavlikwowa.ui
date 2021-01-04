@@ -18,12 +18,20 @@ export const Example: React.FC = () => {
   const [clicked, setClicked] = useState<boolean>(false);
   // An action after click
   const clickOnSwitch = () => {
-    console.log(clicked);
     setClicked(!clicked);
+  };
+  // A style of div`s stories
+  const style = {
+    marginBottom: '10px',
   };
   return (
     <>
-      <Switcher onClick={clickOnSwitch}>
+      <div style={style}>A simple switcher without props and states</div>
+      <Switcher />
+      <div style={style}>{`Current language is: ${
+        clicked ? 'English' : 'Russian'
+      }`}</div>
+      <Switcher checked={clicked} onChange={clickOnSwitch}>
         {clicked ? <EnglishFlagIcon /> : <RussianFlagIcon />}
       </Switcher>
     </>

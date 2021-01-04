@@ -7,10 +7,19 @@ import { SwitcherProps } from './interfaces';
 /* Styles */
 import { StyledSwitcher } from './style';
 
-const Switcher: React.FC<SwitcherProps> = ({ children }: SwitcherProps) => {
+const Switcher: React.FC<SwitcherProps> = ({
+  children,
+  checked,
+  onChange,
+}: SwitcherProps) => {
   return (
-    <StyledSwitcher htmlFor="switcher">
-      <input id="switcher" type="checkbox" />
+    <StyledSwitcher hasChildren={!!children} htmlFor="switcher">
+      <input
+        id="switcher"
+        type="checkbox"
+        checked={checked}
+        onChange={onChange}
+      />
       <span>{children || ''}</span>
     </StyledSwitcher>
   );

@@ -1,8 +1,11 @@
 /* Libraries */
 import styled from '@emotion/styled';
 
-export const StyledSwitcher = styled.label`
-  ${() => {
+/* Intefaces */
+import { StyledSwitcherProps } from './interfaces';
+
+export const StyledSwitcher = styled.label<StyledSwitcherProps>`
+  ${({ hasChildren }: StyledSwitcherProps) => {
     return `
       display: inline-flex;
       cursor: pointer;
@@ -15,13 +18,12 @@ export const StyledSwitcher = styled.label`
       
       input {
         display: none;
-        outline: none;
         
         &:checked ~ span {
-         background: green;
+         background: ${hasChildren ? 'none' : 'white'};
          transform: translateX(70%);
          transition: transform 1s, background 1s;
-         outline: none;
+         border: ${hasChildren ? 'none' : '1px solid darkgrey'};
         }
       }
       
@@ -29,10 +31,10 @@ export const StyledSwitcher = styled.label`
         width: 30px;
         height: 30px;
         border-radius: 50%;
-        background: red;
+        background: ${hasChildren ? 'none' : 'black'};
         transform: translateX(0);
         transition: transform 1s, background 1s;
-        outline: none;
+        border: ${hasChildren ? 'none' : '1px solid black'};
       }
     `;
   }}

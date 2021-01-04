@@ -1,3 +1,8 @@
 export interface SwitcherProps extends React.HTMLProps<HTMLSpanElement> {
-  children?: React.ReactNode;
+  hasChildren?: React.ReactNode;
+  checked?: boolean;
+}
+
+export interface StyledSwitcherProps {
+  hasChildren: boolean;
 }
