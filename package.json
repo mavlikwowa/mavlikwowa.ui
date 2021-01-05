@@ -47,6 +47,9 @@
       "<rootDir>/src/setupTests.ts"
     ]
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "name": "mavlikwowa.ui",
   "author": "malikov.vladimir",
   "module": "dist/mavlikwowa.ui.esm.js",
