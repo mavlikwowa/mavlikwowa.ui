@@ -4,6 +4,7 @@ import Switcher from './Switcher';
 import CloseIcon from './Icons/CloseIcon';
 import EnglishFlagIcon from './Icons/EnglishFlagIcon';
 import RussianFlagIcon from './Icons/RussianFlagIcon';
+import Tag from './Tag';
 
 export {
   Button,
@@ -12,4 +13,5 @@ export {
   RussianFlagIcon,
   CloseIcon,
   SidePage,
+  Tag,
 };
