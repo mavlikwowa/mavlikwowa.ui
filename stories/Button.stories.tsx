@@ -48,8 +48,8 @@ export const Example: React.FC = () => {
         <Button
           buttonSize={ButtonSize.LARGE}
           onClick={onButtonClick}
-          background="aqua"
-          borderColor="blue"
+          background="#F0E9DD"
+          borderColor="#F0E2CB"
         >
           Large button with background and color
         </Button>

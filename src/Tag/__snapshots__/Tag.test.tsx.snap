@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component Tag should render a component 1`] = `
+<Styled(div)
+  background="#129900"
+  border="#ADD900"
+  color="#D0FFC9"
+  height="35px"
+  width="110px"
+>
+  Tag text
+</Styled(div)>
+`;
