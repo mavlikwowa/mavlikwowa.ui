@@ -2,6 +2,7 @@ import Button from './Button';
 import SidePage from './SidePage';
 import Switcher from './Switcher';
 import CloseIcon from './Icons/CloseIcon';
+import BurgerIcon from './Icons/BurgerIcon';
 import EnglishFlagIcon from './Icons/EnglishFlagIcon';
 import RussianFlagIcon from './Icons/RussianFlagIcon';
 import Tag from './Tag';
@@ -14,4 +15,5 @@ export {
   CloseIcon,
   SidePage,
   Tag,
+  BurgerIcon,
 };
