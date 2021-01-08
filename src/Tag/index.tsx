@@ -13,6 +13,7 @@ const Tag: React.FC<TagProps> = ({
   background,
   color,
   children,
+  style,
 }: TagProps) => {
   return (
     <StyledTag
@@ -21,6 +22,7 @@ const Tag: React.FC<TagProps> = ({
       background={background}
       border={border}
       color={color}
+      style={style}
     >
       {children}
     </StyledTag>
