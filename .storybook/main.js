@@ -17,7 +17,6 @@ module.exports = {
         alias: {
           ...config.resolve.alias,
           "@emotion/core": toPath("node_modules/@emotion/react"),
-          // You should add this row
           "@emotion/styled": toPath("node_modules/@emotion/styled"),
           "emotion-theming": toPath("node_modules/@emotion/react"),
         },
