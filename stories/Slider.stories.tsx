@@ -27,6 +27,8 @@ export const Example: React.FC = () => {
     <>
       <div style={style}>A simple Slider</div>
       <Slider data={data} />
+      <div style={style}>Slider with props</div>
+      <Slider data={data} width="200px" height="100px" />
     </>
   );
 };

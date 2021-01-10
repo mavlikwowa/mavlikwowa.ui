@@ -32,7 +32,7 @@ const Slider: React.FC<SliderProps> = ({
   // Calculates width after render
   useEffect(() => {
     getContentWidth();
-  }, []);
+  }, [contentRef]);
 
   // A Number of current slide. Must start from 1 because it`s used in a calculating style
   const [slideAmount, setSlideAmount] = useState<number>(1);
