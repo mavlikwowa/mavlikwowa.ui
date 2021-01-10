@@ -21,6 +21,7 @@ export const Example: React.FC = () => {
     <div>Hi!</div>,
     <div>I`m</div>,
     <div>VOVA</div>,
+    <div>!</div>,
   ];
   return (
     <>

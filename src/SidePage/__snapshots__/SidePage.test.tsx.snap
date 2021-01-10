@@ -6,12 +6,8 @@ exports[`Test component SidePage should render a component 1`] = `
 >
   <Styled(div)>
     <span
-      aria-label="Close Icon"
       onClick={[Function]}
-      onKeyDown={[Function]}
-      role="button"
-      tabIndex={0}
-      title="Close"
+      role="none"
     >
       <CloseIcon />
     </span>

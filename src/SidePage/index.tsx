@@ -37,14 +37,7 @@ const SidePage: React.FC<SidePageProps> = ({
     <SidePageContainer ref={containerRef} show={show} background={background}>
       <SidePageHeader>
         {header}
-        <span
-          aria-label="Close Icon"
-          title="Close"
-          role="button"
-          tabIndex={0}
-          onClick={closeComponent}
-          onKeyDown={closeComponent}
-        >
+        <span role="none" onClick={closeComponent}>
           <CloseIcon />
         </span>
       </SidePageHeader>
