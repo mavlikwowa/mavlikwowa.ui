@@ -15,11 +15,15 @@ import {
 /* Components */
 import ArrowIcon from '../Icons/ArrowIcon';
 
+/* Hooks */
+import { useWindowSize } from '../hooks/useWindowSize';
+
 const Slider: React.FC<SliderProps> = ({
   data,
   width,
   height,
 }: SliderProps) => {
+  const size = useWindowSize();
   // A state of content width. We must calculate it because user can create width in %
   const [cw, setCw] = useState<number>(0);
   // Ref of Content
@@ -32,7 +36,7 @@ const Slider: React.FC<SliderProps> = ({
   // Calculates width after render
   useEffect(() => {
     getContentWidth();
-  }, [contentRef]);
+  }, [size, contentRef]);
 
   // A Number of current slide. Must start from 1 because it`s used in a calculating style
   const [slideAmount, setSlideAmount] = useState<number>(1);
