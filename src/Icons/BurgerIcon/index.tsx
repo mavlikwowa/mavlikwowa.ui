@@ -9,13 +9,7 @@ const BurgerIcon: React.FC = () => {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g
-        id="Icons"
-        stroke="none"
-        strokeWidth="1"
-        fill="none"
-        fillRule="evenodd"
-      >
+      <g id="Icons" strokeWidth="1" fillRule="evenodd">
         <g id="Two-Tone" transform="translate(-817.000000, -3438.000000)">
           <g id="Navigation" transform="translate(100.000000, 3378.000000)">
             <g
