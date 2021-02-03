@@ -46,7 +46,7 @@ export const SidePageHeader = styled.div`
       justify-content: space-between;
       margin-bottom: 24px;
       
-      > span {
+      > span: last-of-type {
         outline: none;
         cursor: pointer;
         transition: transform 0.5s;
