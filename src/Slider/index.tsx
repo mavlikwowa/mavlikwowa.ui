@@ -107,7 +107,7 @@ const Slider: React.FC<SliderProps> = ({
         </div>
       </StyledSlider>
       <StyledScrollBar slideAmount={slideAmount} arrowsColor={arrowsColor}>
-        {data?.length > 0 && Array(data.length).fill(<div />)}
+        {data?.length > 0 && Array(data.length).fill(<div key={Date.now()} />)}
       </StyledScrollBar>
     </StyledSliderWrapper>
   );

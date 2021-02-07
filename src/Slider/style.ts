@@ -107,11 +107,12 @@ export const StyledScrollBar = styled.span<StyledScrollbarProps>`
     return `
       display: none;
       flex-direction: row;
+      margin-top: 15px;
       div {
         border-radius: 50%;
         margin-right: 10px;
-        width: 5px;
-        height: 5px;
+        width: 15px;
+        height: 15px;
         border: 1px solid ${arrowsColor || 'black'};
       }
       div:nth-of-type(${Math.abs(slideAmount - 2)}) {
