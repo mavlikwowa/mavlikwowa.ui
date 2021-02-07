@@ -4,12 +4,13 @@ import styled from '@emotion/styled';
 /* Interfaces */
 import {
   StyledSliderContentProps,
-  SliderProps,
   StyledSliderContainerProps,
+  StyledScrollbarProps,
+  StyledWrapperProps,
 } from './interfaces';
 
-export const StyledSlider = styled.div<SliderProps>`
-  ${({ width, height }: SliderProps) => {
+export const StyledSlider = styled.div<StyledSliderContainerProps>`
+  ${({ width, height, arrowsColor }: StyledSliderContainerProps) => {
     return `
       display: flex;
       justify-content: space-between;
@@ -20,18 +21,30 @@ export const StyledSlider = styled.div<SliderProps>`
         transform: rotate(270deg);
         cursor: pointer;
         outline: none;
+        svg {
+          fill: ${arrowsColor || 'black'};
+        }
+        @media (max-width: 940px) {
+          display: none;
+        }
       }
       > div:last-of-type {
         transform: rotate(90deg);
         cursor: pointer;
         outline: none;
-      }    
+        svg {
+          fill: ${arrowsColor || 'black'};
+        }
+        @media (max-width: 940px) {
+          display: none;
+        }
+      }
     `;
   }}
 `;
 
 export const StyledSliderContainer = styled.div<StyledSliderContainerProps>`
-  ${({ width, height }: StyledSliderContainerProps) => {
+  ${({ width, height, arrowsColor }: StyledSliderContainerProps) => {
     return `
     display: flex;
     width: ${width || '150px'};
@@ -40,6 +53,17 @@ export const StyledSliderContainer = styled.div<StyledSliderContainerProps>`
     align-items: center;
     overflow-x: hidden;
     position: relative;
+    .arrow {
+      transform: rotate(90deg);
+      cursor: pointer;
+      outline: none;
+      svg {
+        fill: ${arrowsColor || 'black'};
+      }
+      @media (max-width: 940px) {
+        display: none;
+      }
+    }
   `;
   }}
 `;
@@ -60,6 +84,41 @@ export const StyledSliderContent = styled.div<StyledSliderContentProps>`
         display: flex;
         justify-content: center;
         align-items: center;
+      }
+      overflow: hidden;
+    `;
+  }}
+`;
+
+export const StyledSliderWrapper = styled.div<StyledWrapperProps>`
+  ${({ width }: StyledWrapperProps) => {
+    return `
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: ${width || '150px'};  
+    `;
+  }}
+`;
+
+export const StyledScrollBar = styled.span<StyledScrollbarProps>`
+  ${({ arrowsColor, slideAmount }: StyledScrollbarProps) => {
+    return `
+      display: none;
+      flex-direction: row;
+      div {
+        border-radius: 50%;
+        margin-right: 10px;
+        width: 5px;
+        height: 5px;
+        border: 1px solid ${arrowsColor || 'black'};
+      }
+      div:nth-of-type(${Math.abs(slideAmount - 2)}) {
+        background: ${arrowsColor || 'black'};
+      }
+      @media (max-width: 940px) {
+        display: flex;
       }
     `;
   }}
